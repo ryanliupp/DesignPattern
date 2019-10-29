@@ -1,4 +1,4 @@
-readme.txt
+eadme.txt
 insert
 third
 add oneline
