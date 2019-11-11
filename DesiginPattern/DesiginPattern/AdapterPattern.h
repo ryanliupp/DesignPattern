@@ -6,7 +6,7 @@ struct AdvanceMediaPlay
 {
 	virtual void playVlc(string playtype) = 0;
 	virtual void playMp4(string playtype) = 0;
-	virtual ~AdvanceMediaPlay();
+	virtual ~AdvanceMediaPlay(){};
 };
 
 struct vlcMediaPlay :public AdvanceMediaPlay
@@ -22,11 +22,11 @@ struct vlcMediaPlay :public AdvanceMediaPlay
 };
 struct mp4MediaPlay :public AdvanceMediaPlay
 {
-	void playVlc(string playtype)
+	void playMp4(string playtype)
 	{
 		cout << "only play mp4" << endl; 
 	};
-	void playMp4(string playtype)
+	void playVlc(string playtype)
 	{ 
 		cout << "error type" << endl; 
 	};
@@ -35,7 +35,8 @@ struct mp4MediaPlay :public AdvanceMediaPlay
 struct MediaPlay
 {
 	virtual void play(string playtype) = 0;
-	virtual ~MediaPlay();
+	virtual ~MediaPlay(){};
+
 };
 
 struct AudioPlay :public MediaPlay
