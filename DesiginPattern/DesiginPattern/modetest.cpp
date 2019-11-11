@@ -1,17 +1,33 @@
 #include "factorymode.h"
 #include "abstractfactory.h"
 #include "AdapterPattern.h"
+#include "DecoratorPattern.h"
 void test3();
+void test4();
 int main()
 {
 	
-	test3();
+	test4();
 	return 0;
 	
 	
 	
 }
-
+void test4()
+{
+	Circle *fivecircle = new Circle();
+	Rectangle *rectdemo = new Rectangle();
+	fivecircle->draw();
+	RedShapeDecorator *redcircle = new RedShapeDecorator(fivecircle);
+	RedShapeDecorator *redrect = new RedShapeDecorator(rectdemo);
+	redcircle->draw();
+	rectdemo->draw();
+	redrect->draw();
+	delete fivecircle;
+	delete rectdemo;
+	delete redcircle;
+	delete redrect;
+}
 void test3()
 {
 	HumanPlayer *aman = new HumanPlayer();

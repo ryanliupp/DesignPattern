@@ -24,6 +24,9 @@
     <ClInclude Include="AdapterPattern.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="DecoratorPattern.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="modetest.cpp">

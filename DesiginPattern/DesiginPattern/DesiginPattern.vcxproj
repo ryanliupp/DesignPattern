@@ -68,6 +68,7 @@
   <ItemGroup>
     <ClInclude Include="abstractfactory.h" />
     <ClInclude Include="AdapterPattern.h" />
+    <ClInclude Include="DecoratorPattern.h" />
     <ClInclude Include="factorymode.h" />
   </ItemGroup>
   <ItemGroup>
