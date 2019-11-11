@@ -1,7 +1,8 @@
-#include <string>
-#include <iostream>
+
 #ifndef FACTORYMODE
 #define FACTORYMODE
+#include <string>
+#include <iostream>
 using namespace std;
 struct human
 {
