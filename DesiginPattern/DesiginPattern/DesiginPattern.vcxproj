@@ -70,6 +70,7 @@
     <ClInclude Include="AdapterPattern.h" />
     <ClInclude Include="DecoratorPattern.h" />
     <ClInclude Include="factorymode.h" />
+    <ClInclude Include="observerpattern.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="modetest.cpp" />

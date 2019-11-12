@@ -2,16 +2,26 @@
 #include "abstractfactory.h"
 #include "AdapterPattern.h"
 #include "DecoratorPattern.h"
+#include "observerpattern.h"
 void test3();
 void test4();
+void test5();
 int main()
 {
-	
-	test4();
+	test5();
 	return 0;
 	
-	
-	
+}
+void test5()
+{
+	Subject *sub = new Subject();
+	Observer *Aobser = new Aobserver(sub);
+	Observer *Bobser = new Bobserver(sub);
+	sub->setstate(0);
+	sub->setstate(1);
+	delete sub;
+	delete Aobser;
+	delete Bobser;
 }
 void test4()
 {
