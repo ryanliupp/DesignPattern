@@ -71,6 +71,7 @@
     <ClInclude Include="DecoratorPattern.h" />
     <ClInclude Include="factorymode.h" />
     <ClInclude Include="observerpattern.h" />
+    <ClInclude Include="singleton.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="modetest.cpp" />

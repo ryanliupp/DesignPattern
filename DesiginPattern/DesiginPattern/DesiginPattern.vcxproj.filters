@@ -30,6 +30,9 @@
     <ClInclude Include="observerpattern.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="singleton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="modetest.cpp">

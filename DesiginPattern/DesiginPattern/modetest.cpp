@@ -3,14 +3,23 @@
 #include "AdapterPattern.h"
 #include "DecoratorPattern.h"
 #include "observerpattern.h"
+#include "singleton.h"
 void test3();
 void test4();
 void test5();
+void test6();
 int main()
 {
-	test5();
+	test6();
 	return 0;
 	
+}
+void test6()
+{
+	//lazySingleton* test1 = new lazySingleton();
+	lazySingleton* oneInstance = lazySingleton::getSingleton();
+	lazySingleton* anotherInstance = lazySingleton::getSingleton();
+	delete oneInstance;
 }
 void test5()
 {
