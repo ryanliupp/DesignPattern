@@ -10,9 +10,9 @@ struct lazySingleton
 		}
 		else
 			return singletonInstance;
-	};
+	}
 private:
-	lazySingleton();
+	lazySingleton(){}
 	static lazySingleton* singletonInstance;
 };
 
